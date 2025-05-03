@@ -344,7 +344,7 @@ files."
   "Save one file from the current view buffer.
 
 Unlike `mu4e-view-save-attachments', prompt for the destination file
-name--not only the directory--of the attachment."
+name of the attachment, not just the directory."
   (interactive)
   (let* ((parts (mu4e-view-mime-parts))
          (candidates (mu4e--attachments-alist parts))
